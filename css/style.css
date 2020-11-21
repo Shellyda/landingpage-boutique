@@ -1,0 +1,337 @@
+/*Configurações Gerais*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Playfair Display', serif;
+font-weight: 100;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+html, body{
+ height: 100%;
+}
+
+
+/***/
+
+/*Header */
+section.banner{
+	background-image: url(../images/banner.png);
+	background-size: cover;
+	background-position: 10% 35%;
+	background-repeat: no-repeat;
+   overflow-x: hidden;
+}
+section.banner .logo, .logo-down{
+	background-image: url('../images/logo-branca.svg');
+	background-size: 100% 100%;
+	background-position: center;
+	float: left;
+	padding: 110px;
+}
+/*Menu Desktop */
+section.banner nav{
+	float: right;
+	position: relative;
+	z-index: 3;
+}
+
+ul li{
+ list-style-type: none;
+ display: inline-block;
+ margin: 0 25px;
+ margin-top: 70px;
+ cursor: pointer;
+}
+
+ ul li a{
+	text-decoration: none;
+	 color: white;
+	 font-size: 19pt;
+	 text-transform: uppercase;
+}
+nav.menu-desktop .line-down{
+	background-color: white;
+	height: 2px;
+	width: 110%;
+	margin: 15px 0;
+	position: absolute;
+	right: -110px;
+}
+
+/* Menu mobile*/
+.menu-mobile{
+	position: relative;
+}
+.menu-mobile h1{
+	display: none;
+	cursor: pointer;
+  	top: 32px;
+    font-size: 39pt;
+    right: 20px;
+    position: absolute;
+    color: white;
+}
+.ul-mob {
+	display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    padding: 100px;
+    background: #35363A;
+}
+.ul-mob li{
+	text-align: center;
+	display: block;
+}
+.ul-mob li a{
+	color:  #D6C2B7;
+}
+#toggle{
+	display: none;
+}
+#toggle:checked + .ul-mob{
+	display: block;
+}
+
+/* Call */
+
+.call{
+	float: right;
+	margin-top: 90px;
+	margin-bottom: 70px;
+	margin-right: 65px;
+}
+
+.call h1{
+	color: white;
+	font-size: 53pt;
+}
+
+/* Products */
+
+section.products{
+	background-color: #35363A;
+	padding-top: 50px;
+	padding-bottom: 120px;
+}
+
+section.products > .container{
+	max-width: 1100px;
+}
+section.products h1.title{
+	font-size: 42pt;
+    padding-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #D6C2B7;
+    text-transform: uppercase;
+}
+.box-wraper{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.box-single{
+	position: relative;
+	margin: 30px 20px;
+	width: 45%;
+	text-align: center;
+	height: auto;
+	background-color: white;
+}
+.box-single h2{
+	position: relative;
+	font-size: 22pt;
+	top: 30px;
+	color:  #35363A;
+}
+.box-single img{
+	width: 100%;
+	height: 88%;
+	padding-left: 2px;
+	margin:0 auto;
+}
+.box-single div.btn{
+	width: 68%;
+    height: 70px;
+    left: 45px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #D6C2B7;
+    position: absolute;
+    bottom: -24px;
+    border: 1px solid #B7AB9D;
+}
+
+.box-single div.btn a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #35363A;
+	font-size: 18pt;
+}
+
+.box-single div.btn:hover{
+	background: #7a7a7a;
+}
+
+.box-single div.btn:hover a{
+	color: #D6C2B7;
+}
+/* footer */
+
+footer{
+	background-color: #B7AB9D;
+}
+
+.logo-down{
+	background-image: url('../images/logo-preta.svg');
+}
+.icon-wraper{
+	margin-right: 60px;
+	margin-top: 60px;
+	float: right;
+}
+.icon-footer .icon{
+	margin-right: 15px;
+	display: inline-block;
+	padding: 10px;
+	background-image: url('../images/phone.svg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon-footer p{
+	display: inline-block;
+    font-size: 19pt;
+    color: #35363A;
+}
+.icon-footer .email{
+	background-image: url('../images/email.svg');
+}
+.icon-footer .instagram{
+	background-image: url('../images/instagram.svg');
+}
+
+.bottom{
+	background-color: white;
+	text-align: right;
+	padding: 20px 50px;
+	font-size: 20pt;
+	color: #35363A;
+}
+
+/* Media queries */
+@media screen and (max-width: 950px){
+.box-wraper{
+	flex-wrap: wrap;
+}
+.box-single{
+	margin: 30px 20px;
+	width: 35%;
+}
+
+}
+
+@media screen and (max-width: 768px){
+.box-single{
+	margin: 30px auto;
+	width: 51%;
+}
+.menu-desktop{
+	display: none;
+}
+.menu-mobile h1{
+	display: block;
+}
+
+.call h1 {
+    font-size: 49pt;
+}
+section.banner .logo{
+    padding: 100px;
+}
+.box-single div.btn {
+    left: 56px;
+}
+}
+
+@media screen and (max-width: 670px){
+.logo-down{
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+}
+.icon-wraper{
+	float: none;
+	margin: 35px auto;
+	padding: 0 138px;
+}
+.bottom {
+    text-align: center;
+    font-size: 18pt;
+}
+.box-single div.btn {
+    left: 48px;
+}
+section.products h1.title {
+    font-size: 36pt;
+}
+}
+
+@media screen and (max-width: 570px){
+.box-single{
+	margin: 30px auto;
+	width: 70%;
+}
+.box-single div.btn {
+    left: 54px;
+}
+.icon-wraper {
+    padding: 0 125px;
+}
+
+section.banner .logo {
+    padding: 82px;
+    margin: 0 40px;
+}
+section.banner{
+	padding: 15px 0;
+}
+}
+
+@media screen and (max-width: 500px){
+.call {
+    margin-top: 200px;
+    margin-right: 20px;
+}
+.call h1 {
+     margin-top: 180px;
+    font-size: 35pt;
+}
+.box-single {
+    width: 78%;
+}
+.icon-wraper {
+    padding: 0 30px;
+    margin-left: 50px;
+}
+.menu-mobile h1{
+  	top: 32px;
+    font-size: 35pt;
+    right: 20px;
+}
+
+}
