@@ -8,7 +8,7 @@
 
 This project represents the inaugural challenge faced during the trainee stage of the CITi UFPE development subarea. The objective was to replicate a responsive landing page using only HTML and CSS, showcasing the team's skills in front-end development.
 
-Click [here](https://shellyda.github.io/landingpage-boutique/) to check out the deployed project!
+Click [here](https://shellyda.github.io/responsive-landingpage-boutique/) to check out the deployed project!
 
 ## Project Structure
 
@@ -28,14 +28,13 @@ The project is organized with simplicity and clarity in mind, containing the fol
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/html-css-challenge.git
-
-
+   git clone https://shellyda.github.io/responsive-landingpage-boutique.git 
+   ```
 ## Usage Instructions
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Shellyda/landingpage-boutique.git
+   git clone https://shellyda.github.io/responsive-landingpage-boutique.git
    ```
 2. Open the index.html file in your preferred web browser.
 3. Explore the responsive landing page, appreciating the design achieved through HTML and CSS.
